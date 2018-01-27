@@ -1,4 +1,30 @@
-# TaskManagement
+# Task Management
+
+## Front-end angular application project
+
+This is the project is used for testing potential candidates to join our front-end team.
+
+## Technical requirements
+
+Build an angular front-end application that allows users to create "Task"
+
+A task is defined as an item of work that a user creates. The necessary fields are (but you are free to extend the model):
+
+- Title: A short, descriptive name of the task.
+- Description: A long description of the task.
+- Start Date: A date that the user created the task.
+- End Date: A date that the user hopes to finish.
+- Status: A status of the task (New, Process, Completed).
+
+## Description
+
+Build your own public repository on GitHub or fork from this template, and call it whatever you like. Build your application in your repo.
+After completing the project, email the source code or URL for your GitHub repository to blabl@abc-softwaredev.com.
+
+One of the major goals of this project is to see how you fill in ambiguities in your own creative way.
+There is no such thing as a perfect project here, just interpretations of the instructions above. So, be creative in your approach.
+
+## Technology
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
