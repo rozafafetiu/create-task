@@ -8,7 +8,7 @@ This is the project is used for testing potential candidates to join our front-e
 
 Build an angular front-end application that allows users to create "Task"
 
-A task is defined as an item of work that a user creates. The necessary fields are (but you are free to extend the model):
+A task is defined as an item of work that a user creates. The necessary fields are:
 
 - Title: A short, descriptive name of the task.
 - Description: A long description of the task.
