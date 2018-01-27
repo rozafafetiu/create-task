@@ -19,7 +19,7 @@ A task is defined as an item of work that a user creates. The necessary fields a
 ## Description
 
 Build your own public repository on GitHub or fork from this template, and call it whatever you like. Build your application in your repo.
-After completing the project, email the source code or URL for your GitHub repository to blabl@abc-softwaredev.com.
+After completing the project, email the source code or URL for your GitHub repository to kosovo@abc-softwaredev.com
 
 One of the major goals of this project is to see how you fill in ambiguities in your own creative way.
 There is no such thing as a perfect project here, just interpretations of the instructions above. So, be creative in your approach.
