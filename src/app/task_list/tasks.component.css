@@ -1,0 +1,82 @@
+.content{
+    margin-top:30px;
+}
+.form-control{
+    border-radius: 0;
+    height:50px;
+    margin-bottom:10px;
+    width: 100%;
+  
+}
+.form-control:focus{
+    outline:none;
+    box-shadow: none;
+}
+
+textarea.form-control{
+    height:80px;
+    overflow: hidden;
+}
+.create-task-section{
+    margin-top:50px;
+    margin-bottom:100px;
+}
+
+table{
+    border:1px solid #adadad;
+}
+table th{
+    background-color: darkgray;
+}
+
+label{
+    font-weight:500;
+}
+
+.btn.btn-default{
+    height: 50px;
+    background-color: #ffffff;
+    color:darkcyan;
+    border: 1px solid darkcyan;
+    transition: background-color 0.3s;
+    border-radius: 0;
+    font-weight:400;
+}
+
+.btn.btn-default:hover{
+    background-color: darkcyan;
+    color:#ffffff;
+}
+.btn.btn-default:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.create-task-btn{
+    width:400px;
+    float: right;
+    margin-top:15px;
+}
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+}
+
+.unstyled::-webkit-clear-button{
+    display: none;
+}
+
+.unstyled {
+      background:url('../../assets/img/calendar.png') no-repeat 92%;
+  }
+  
+.error-msg{
+    color:red;
+}
+
+@media(max-width: 480px){
+    .btn.create-task-btn{
+        width:100%;
+    }
+}
