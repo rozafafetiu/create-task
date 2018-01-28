@@ -1,0 +1,76 @@
+.content{
+    margin-top:30px;
+    margin-bottom:100px;
+}
+
+.content .form-control{
+    height:50px;
+    width:100%;
+    border-radius: 0;
+
+
+}
+
+.content .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.content textarea.form-control{
+    overflow: hidden;
+    height:auto;
+}
+
+.btn.btn-default{
+    border-radius: 0;
+    background-color: #ffffff;
+    color: darkcyan;
+    border:1px solid darkcyan;
+    height:50px;
+
+}
+
+.btn.btn-default:hover{
+    background-color: darkcyan;
+    color: #ffffff;
+    border:1px solid darkcyan;
+
+}
+
+.btn.btn-default:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.btn-default.create-btn{
+    width:400px;
+    float: right;
+    margin-top:15px;
+}
+
+label{
+    margin-top:15px;
+}
+
+.undisplay::-webkit-inner-spin-button{
+    display: none;
+}
+
+table{
+    border:1px solid #adadad;
+}
+
+table th{
+    background-color:darkgray;
+
+}
+
+.error-msg{
+    color: red;
+}
+
+@media(max-width: 480px){
+    .btn.btn-default.create-btn{
+        width: 100%;
+    }
+}

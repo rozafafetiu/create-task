@@ -1,0 +1,78 @@
+<div class="container-fluid content">
+<div class="table-responsive">          
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Start date</th>
+          <th>End date</th>
+          <th>Status</th>
+          <th>Reporter</th>
+          <th>Asignee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of taskList">
+          <td>{{item.title}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.startDate |  date: 'dd-MM-yyyy'}}</td>
+          <td>{{item.endDate |  date: 'dd-MM-yyyy'}}</td>
+          <td>{{item.status}}</td>
+          <td>{{item.reporter}}</td>
+          <td>{{item.asignee}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  <button class="btn btn-default" (click)="addTask()">Create new task</button>
+
+
+<div class="container" *ngIf="isVisible">
+  <div class="row">
+    <div class="col-md-12">
+       <label>Title*</label>
+        <input type="text" [(ngModel)]="actualTitle" placeholder=" A short, descriptive name of the task" class="form-control">
+    </div>
+
+    <div class="col-md-12">
+        <label>Description*</label>
+         <textarea type="text" [(ngModel)]="actualDescription" placeholder="A long description of the task" class="form-control" rows="4"></textarea>  
+     </div>
+
+    <div class="col-md-6">
+        <label>Start Date*</label>
+         <input type="date" [(ngModel)]="actualStartDate" placeholder="Enter title of task" class="form-control undisplay">
+     </div>
+
+     <div class="col-md-6">
+        <label>End Date*</label>
+         <input type="date" [(ngModel)]="actualEndDate" placeholder="Enter title of task" class="form-control undisplay">
+     </div>
+
+     <div class="col-md-12">
+        <label>Status*</label>
+        <select [(ngModel)]="actualStatus" class="form-control">
+          <option  *ngFor="let s of statusList" >{{s}}</option>
+        </select>
+     </div>
+
+     <div class="col-md-6">
+        <label>Reporter</label>
+         <input type="text" [(ngModel)]="actualReporter" placeholder="Enter title of task" class="form-control">
+     </div>
+
+     <div class="col-md-6">
+        <label>Asigne*</label>
+         <input type="text" [(ngModel)]="actualAsignee" placeholder="Enter title of task" class="form-control">
+     </div>
+
+     <div class="col-md-12">
+       <p *ngIf="errorMessage" class="error-msg">*These fields are mandatory</p>
+        <button class="btn btn-default create-btn" (click)="createTask()">Create</button>
+     </div>
+  </div>
+</div>
+</div>  
+
+
